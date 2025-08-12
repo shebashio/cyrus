@@ -1,6 +1,7 @@
 import type { EdgeEvent } from "../types";
 
 export class EventStreamDurableObject {
+	private state: DurableObjectState;
 	private env: any;
 	private connections: Map<
 		string,

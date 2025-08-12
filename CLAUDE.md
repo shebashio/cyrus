@@ -253,3 +253,5 @@ This integration is automatically available in all Cyrus sessions - the EdgeWork
 
 This ensures that when pnpm resolves `workspace:*` references during CLI publishing, it uses the latest published package versions rather than outdated ones.
 
+
+- For all scripts that interact with Cloudflare ensure that the script prompts the user for a cloudflare account id.  This is to support accounts that have multiple account ids.  Set the inputted value of the account id to a global variable CLOUDFLARE_ACCOUNT_ID prior to running any wrangler commands.
